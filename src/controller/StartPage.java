@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import model.csvReader;
 
 import java.io.IOException;
 
@@ -16,6 +17,8 @@ public class StartPage {
         stage.setTitle("Crime or Family?");
         stage.setScene(new Scene(root));
         stage.show();
+
+        csvReader.readCsvFile();
     }
 
     public void adventureButton(ActionEvent actionEvent) throws IOException {
