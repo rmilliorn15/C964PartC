@@ -14,7 +14,7 @@ public class Comedy {
 
         Parent root = FXMLLoader.load(getClass().getResource("/view/fantasySciFi.fxml"));
         Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
-        stage.setTitle("Crime or Family?");
+        stage.setTitle("Fantasy or Sci-Fi?");
         stage.setScene(new Scene(root));
         stage.show();
     }
@@ -23,7 +23,7 @@ public class Comedy {
 
         Parent root = FXMLLoader.load(getClass().getResource("/view/fantasySciFi.fxml"));
         Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
-        stage.setTitle("Crime or Family?");
+        stage.setTitle("Fantasy or Sci-Fi?");
         stage.setScene(new Scene(root));
         stage.show();
     }

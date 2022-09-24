@@ -13,7 +13,7 @@ public class Secondpage {
     public void crimeButton(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/view/comedy.fxml"));
         Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
-        stage.setTitle("Crime or Family?");
+        stage.setTitle("Want Comedy?");
         stage.setScene(new Scene(root));
         stage.show();
 
@@ -22,7 +22,7 @@ public class Secondpage {
     public void familyButton(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/view/comedy.fxml"));
         Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
-        stage.setTitle("Crime or Family?");
+        stage.setTitle("Want Comedy?");
         stage.setScene(new Scene(root));
         stage.show();
     }
@@ -30,7 +30,7 @@ public class Secondpage {
     public void neitherButton(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/view/comedy.fxml"));
         Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
-        stage.setTitle("Crime or Family?");
+        stage.setTitle("Want Comedy?");
         stage.setScene(new Scene(root));
         stage.show();
     }
