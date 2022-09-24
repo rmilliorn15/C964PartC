@@ -7,17 +7,27 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FantasySciFi">
    <children>
-      <Label layoutX="118.0" layoutY="55.0" text="Want a Fantasy or Science Fiction?">
+      <Label layoutX="95.0" layoutY="56.0" text="Want a Fantasy or Science Fiction theme?">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="62.0" layoutY="133.0" mnemonicParsing="false" text="Fantasy">
+      <Button layoutX="62.0" layoutY="133.0" mnemonicParsing="false" onAction="#fantasyButton" text="Fantasy">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="388.0" layoutY="133.0" mnemonicParsing="false" text="Science Fiction">
+      <Button layoutX="388.0" layoutY="133.0" mnemonicParsing="false" onAction="#sciFiButton" text="Science Fiction">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="427.0" layoutY="250.0" mnemonicParsing="false" onAction="#noButton" text="Neither">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="77.0" layoutY="250.0" mnemonicParsing="false" onAction="#bothButton" text="Both">
          <font>
             <Font size="24.0" />
          </font>

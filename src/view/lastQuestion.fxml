@@ -7,17 +7,22 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LastQuestion">
    <children>
-      <Label layoutX="151.0" layoutY="51.0" text="Last one. mystery or thriller?">
+      <Label layoutX="148.0" layoutY="52.0" text="Last one. Mystery or Thriller?">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="93.0" layoutY="159.0" mnemonicParsing="false" text="Mystery">
+      <Button layoutX="90.0" layoutY="149.0" mnemonicParsing="false" onAction="#mysteryButton" text="Mystery">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="398.0" layoutY="159.0" mnemonicParsing="false" text="Thriller">
+      <Button layoutX="400.0" layoutY="149.0" mnemonicParsing="false" onAction="#thrillerButton" text="Thriller">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="245.0" layoutY="245.0" mnemonicParsing="false" onAction="#neitherButton" text="Neither">
          <font>
             <Font size="24.0" />
          </font>
