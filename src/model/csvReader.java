@@ -1,28 +1,48 @@
 package model;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.io.IOException;
+import model.VideoGame;
 
 public class csvReader {
 
 
-    public static void readCsvFile(){
+    public static void readCsvFile() throws IOException {
+        ObservableList<VideoGame> videoGames = FXCollections.observableArrayList();
         String file = "imdb-videogamesupdated.csv";
-        String delimiter = ",";
-        String line;
-        List<List<String>> lines = new ArrayList();
-        try (BufferedReader br =
-                     new BufferedReader(new FileReader(file))) {
-            while((line = br.readLine()) != null){
-                List<String> values = Arrays.asList(line.split(delimiter));
-                lines.add(values);
-            }
-            lines.forEach(l -> System.out.println(l));
-        } catch (Exception e){
-            System.out.println(e);
+
+        String line = null;
+
+        FileReader fileReader = new FileReader(file);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+        while((line = bufferedReader.readLine()) != null){
+            String[] temp = line.split(",");
+            int id = Integer.parseInt(temp[0]);
+            String title = temp[1];
+            String year = temp[2];
+            String description = temp[3];
+            boolean action = Boolean.parseBoolean(temp[4]);
+            boolean adventure = Boolean.parseBoolean(temp[5]);
+            boolean comedy = Boolean.parseBoolean(temp[6]);
+            boolean crime = Boolean.parseBoolean(temp[7]);
+            boolean family = Boolean.parseBoolean(temp[8]);
+            boolean fantasy = Boolean.parseBoolean(temp[9]);
+            boolean mystery = Boolean.parseBoolean(temp[10]);
+            boolean sciFi = Boolean.parseBoolean(temp[11]);
+            boolean thriller = Boolean.parseBoolean(temp[12]);
+
+
+            VideoGame addGame = new VideoGame(id,title,year,description,action,
+                    adventure,comedy,crime,family, fantasy,mystery,sciFi,thriller);
+
+            VideoGame.addVideoGame(addGame);
+
+
         }
 
     }
