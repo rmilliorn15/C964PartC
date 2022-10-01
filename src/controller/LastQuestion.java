@@ -21,12 +21,15 @@ public class LastQuestion {
     ObservableList<VideoGame> lastGame = FXCollections.observableArrayList();
     private void lastFilterMethod(ActionEvent actionEvent) throws IOException {
         for (VideoGame videoGame : filteredGame4) {
-            if (videoGame.isMystery() == filterCsv.isMystery() || videoGame.isThriller() == filterCsv.isThriller()) {
+            if (videoGame.isMystery() == filterCsv.isMystery() && videoGame.isThriller() == filterCsv.isThriller()) {
                 lastGame.add(videoGame);
             }
         }
 
-        System.out.println(lastGame.size());
+        if (lastGame.isEmpty()){
+            System.out.println("Unfortunately no exact match found but you may like this Game.");
+            lastGame = filteredGame4;
+        }
 
 
         Parent root = FXMLLoader.load(getClass().getResource("/view/results.fxml"));

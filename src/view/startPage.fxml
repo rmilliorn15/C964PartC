@@ -19,6 +19,7 @@
       </Label>
       <Button layoutX="106.0" layoutY="188.0" mnemonicParsing="false" onAction="#actionButton" text="Action" />
       <Button layoutX="502.0" layoutY="188.0" mnemonicParsing="false" onAction="#adventureButton" text="Adventure" />
-      <Button layoutX="312.0" layoutY="252.0" mnemonicParsing="false" onAction="#bothButton" text="Both" />
+      <Button layoutX="111.0" layoutY="277.0" mnemonicParsing="false" onAction="#bothButton" text="Both" />
+      <Button layoutX="512.0" layoutY="265.0" mnemonicParsing="false" onAction="#neitherButton" text="Neither" />
    </children>
 </AnchorPane>

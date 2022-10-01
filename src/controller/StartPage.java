@@ -58,4 +58,11 @@ public class StartPage {
         filterCsv.setAdventure(true);
         filterGamesList(actionEvent);
     }
+
+    public void neitherButton(ActionEvent actionEvent) throws IOException {
+
+        filterCsv.setAction(false);
+        filterCsv.setAdventure(false);
+        filterGamesList(actionEvent);
+    }
 }

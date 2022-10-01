@@ -26,7 +26,10 @@ public class FantasySciFi {
             }
         }
 
-        System.out.println(filteredGame4.size());
+        if (filteredGame4.isEmpty()){
+            System.out.println("No Matching game, continuing from last available list. ");
+            filteredGame4 = filteredGame3;
+        }
 
 
         Parent root = FXMLLoader.load(getClass().getResource("/view/lastQuestion.fxml"));
@@ -48,4 +51,9 @@ public class FantasySciFi {
         filteredListMethod(actionEvent);
     }
 
+    public void neitherButton(ActionEvent actionEvent) throws IOException {
+        filterCsv.setSciFi(false);
+        filterCsv.setFantasy(false);
+        filteredListMethod(actionEvent);
+    }
 }
