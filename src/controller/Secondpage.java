@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import model.VideoGame;
 import model.filterCsv;
+import model.trackChoices;
 
 import java.io.IOException;
 
@@ -39,8 +40,8 @@ public class Secondpage {
 
         filterCsv.setCrime(true);
         filterCsv.setFamily(false);
-
         filterGamesMethod(actionEvent);
+        trackChoices.setPickCrime(trackChoices.getPickCrime() + 1);
 
     }
 
@@ -49,6 +50,7 @@ public class Secondpage {
         filterCsv.setCrime(false);
         filterCsv.setFamily(true);
         filterGamesMethod(actionEvent);
+        trackChoices.setPickFamily(trackChoices.getPickFamily() + 1);
     }
 
 

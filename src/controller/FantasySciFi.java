@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import model.VideoGame;
 import model.filterCsv;
+import model.trackChoices;
 
 import java.io.IOException;
 
@@ -43,12 +44,15 @@ public class FantasySciFi {
         filterCsv.setFantasy(true);
         filterCsv.setSciFi(false);
         filteredListMethod(actionEvent);
+        trackChoices.setPickFantasy(trackChoices.getPickFantasy() + 1);
+
     }
 
     public void sciFiButton(ActionEvent actionEvent) throws IOException {
         filterCsv.setSciFi(true);
         filterCsv.setFantasy(false);
         filteredListMethod(actionEvent);
+        trackChoices.setPickSciFi(trackChoices.getPickSciFi() + 1);
     }
 
     public void neitherButton(ActionEvent actionEvent) throws IOException {

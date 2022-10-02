@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import model.VideoGame;
 import model.filterCsv;
+import model.trackChoices;
 
 import java.io.IOException;
 
@@ -36,6 +37,7 @@ public class Comedy {
 
         filterCsv.setComedy(true);
         filterGameComedy(actionEvent);
+        trackChoices.setPickComedy(trackChoices.getPickComedy() + 1);
     }
 
 

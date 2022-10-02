@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import model.VideoGame;
 import model.filterCsv;
+import model.trackChoices;
 
 import java.io.IOException;
 
@@ -18,7 +19,7 @@ import static controller.FantasySciFi.filteredGame4;
 
 public class LastQuestion {
 
-    ObservableList<VideoGame> lastGame = FXCollections.observableArrayList();
+   public static ObservableList<VideoGame> lastGame = FXCollections.observableArrayList();
     private void lastFilterMethod(ActionEvent actionEvent) throws IOException {
         for (VideoGame videoGame : filteredGame4) {
             if (videoGame.isMystery() == filterCsv.isMystery() && videoGame.isThriller() == filterCsv.isThriller()) {
@@ -43,6 +44,7 @@ public class LastQuestion {
         filterCsv.setMystery(true);
         filterCsv.setThriller(false);
         lastFilterMethod(actionEvent);
+        trackChoices.setPickMystery(trackChoices.getPickMystery() + 1);
     }
 
 
@@ -52,6 +54,7 @@ public class LastQuestion {
         filterCsv.setMystery(false);
         filterCsv.setThriller(true);
         lastFilterMethod(actionEvent);
+        trackChoices.setPickThriller(trackChoices.getPickThriller() + 1);
 
 
     }

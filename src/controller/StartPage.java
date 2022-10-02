@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import model.VideoGame;
 import model.filterCsv;
+import model.trackChoices;
 
 import java.io.IOException;
 
@@ -39,6 +40,7 @@ public class StartPage {
         filterCsv.setAction(true);
         filterCsv.setAdventure(false);
         filterGamesList(actionEvent);
+        trackChoices.setPickAction(trackChoices.getPickAction() + 1);
     }
 
 
@@ -48,6 +50,7 @@ public class StartPage {
         filterCsv.setAction(false);
         filterCsv.setAdventure(true);
         filterGamesList(actionEvent);
+        trackChoices.setPickAdventure(trackChoices.getPickAdventure() + 1);
 
     }
 
@@ -57,6 +60,8 @@ public class StartPage {
         filterCsv.setAction(true);
         filterCsv.setAdventure(true);
         filterGamesList(actionEvent);
+        trackChoices.setPickAction(trackChoices.getPickAction() + 1);
+        trackChoices.setPickAdventure(trackChoices.getPickAdventure() + 1);
     }
 
     public void neitherButton(ActionEvent actionEvent) throws IOException {

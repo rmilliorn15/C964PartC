@@ -14,9 +14,20 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="resultsText" layoutX="166.0" layoutY="107.0" prefHeight="25.0" prefWidth="293.0" promptText="Results text goes here. " />
-      <TextArea fx:id="gameDescript" layoutX="166.0" layoutY="132.0" prefHeight="207.0" prefWidth="293.0" promptText="Game Description goes here. " />
-      <Button layoutX="478.0" layoutY="153.0" mnemonicParsing="false" onAction="#nextButton" text="No Interested" />
-      <Button layoutX="496.0" layoutY="279.0" mnemonicParsing="false" onAction="#restartButton" text="Restart" />
+      <TextField fx:id="resultsText" editable="false" layoutX="166.0" layoutY="89.0" prefHeight="43.0" prefWidth="293.0" promptText="Results text goes here. ">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextArea fx:id="gameDescript" layoutX="166.0" layoutY="132.0" prefHeight="207.0" prefWidth="293.0" promptText="Game Description goes here. " wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Button layoutX="478.0" layoutY="153.0" mnemonicParsing="false" onAction="#nextButton" text="Not Interested" />
+      <Button layoutX="497.0" layoutY="211.0" mnemonicParsing="false" onAction="#restartButton" text="Restart" />
+      <Button layoutX="479.0" layoutY="277.0" mnemonicParsing="false" onAction="#mainMenuButton" text="Main Menu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
