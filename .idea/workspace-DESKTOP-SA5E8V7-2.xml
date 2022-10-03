@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3178aa25-bbb4-4b4b-ab63-ded350987fe7" name="Changes" comment="Set up to create video Game object using booleans for genres.">
+      <change afterPath="$PROJECT_DIR$/src/model/VideoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Comedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Comedy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/FantasySciFi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/FantasySciFi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LastQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LastQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Secondpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Secondpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/csvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/csvReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/filterCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/filterCsv.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EujJ9WiFC4teCwdvjfFCT6waIr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming Files/C482PA2" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="C964PartC" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.fxml,javafx.controls,javafx.graphics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3178aa25-bbb4-4b4b-ab63-ded350987fe7" name="Changes" comment="" />
+      <created>1663452291927</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663452291927</updated>
+      <workItem from="1663452311532" duration="1868000" />
+      <workItem from="1663463854573" duration="632000" />
+      <workItem from="1663696177139" duration="2268000" />
+      <workItem from="1663784434747" duration="2330000" />
+      <workItem from="1663786954421" duration="965000" />
+      <workItem from="1663981742745" duration="60000" />
+      <workItem from="1663981944924" duration="5661000" />
+      <workItem from="1663988568993" duration="1071000" />
+      <workItem from="1664055030218" duration="15689000" />
+    </task>
+    <task id="LOCAL-00001" summary="First page runs and buttons work on start page.">
+      <created>1663787127210</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663787127210</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Page swap and front end portions done. Need to do CSV and backend.">
+      <created>1663984711910</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663984711910</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Page swap and front end portions done. Need to do CSV and backend.">
+      <created>1663985311271</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663985311271</updated>
+    </task>
+    <task id="LOCAL-00004" summary="System reads CSV and puts into array list. Need to work on filtering it down by the selections on questions.">
+      <created>1663988179019</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663988179019</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First page runs and buttons work on start page." />
+    <MESSAGE value="Page swap and front end portions done. Need to do CSV and backend." />
+    <MESSAGE value="System reads CSV and puts into array list. Need to work on filtering it down by the selections on questions." />
+    <MESSAGE value="Set up to create video Game object using booleans for genres." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up to create video Game object using booleans for genres." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="13" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/model/filterCsv.java</url>
+          <line>80</line>
+          <properties class="model.filterCsv" method="setThriller">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/StartPage.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/C964PartC$Main.ic" NAME="Main Coverage Results" MODIFIED="1663786134533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Capstone_stuff$Main.ic" NAME="Main Coverage Results" MODIFIED="1664062034250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
