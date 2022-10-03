@@ -10,6 +10,12 @@ public class trackChoices {
     private static int pickSciFi = 0;
     private static int pickMystery = 0;
     private static int pickThriller = 0;
+    private static int numGames1 = 0;
+    private static int numGames2 = 0;
+    private static int numGames3 = 0;
+    private static int numGames4 = 0;
+    private static int numgames5 = 0;
+
 
     public static int getPickAction() {
         return pickAction;
@@ -81,4 +87,47 @@ public class trackChoices {
     public static void setPickThriller(int pickThriller) {
         trackChoices.pickThriller = pickThriller;
     }
+
+    public static int getNumGames1() {
+        return numGames1;
+    }
+
+    public static int getNumGames2() {
+        return numGames2;
+    }
+
+    public static int getNumGames3() {
+        return numGames3;
+    }
+
+    public static int getNumGames4() {
+        return numGames4;
+    }
+
+    public static int getNumgames5() {
+        return numgames5;
+    }
+
+
+    public static void setNumGames1(int actGames) {
+        trackChoices.numGames1 = actGames;
+    }
+
+    public static void setNumGames2(int advGames) {
+        trackChoices.numGames2 = advGames;
+    }
+
+    public static void setNumGames3(int comGames) {
+        trackChoices.numGames3 = comGames;
+    }
+
+    public static void setNumGames4(int criGames) {
+        trackChoices.numGames4 = criGames;
+    }
+
+    public static void setNumgames5(int famGames) {
+        trackChoices.numgames5 = famGames;
+    }
+
+
 }

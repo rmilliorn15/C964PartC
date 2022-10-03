@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.VideoGame;
 import model.csvReader;
 
 public class Main extends Application {
@@ -18,6 +19,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         csvReader.readCsvFile();
+        VideoGame.setGenres();
         Parent root = FXMLLoader.load(getClass().getResource("/view/mainView.fxml"));
         stage.setTitle("Welcome, Click start to begin.");
         stage.setScene(new Scene(root));

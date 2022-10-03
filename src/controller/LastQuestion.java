@@ -14,22 +14,23 @@ import model.trackChoices;
 
 import java.io.IOException;
 
-import static controller.Comedy.filteredGame3;
 import static controller.FantasySciFi.filteredGame4;
 
 public class LastQuestion {
 
-   public static ObservableList<VideoGame> lastGame = FXCollections.observableArrayList();
+    public static ObservableList<VideoGame> lastGame = FXCollections.observableArrayList();
     private void lastFilterMethod(ActionEvent actionEvent) throws IOException {
         for (VideoGame videoGame : filteredGame4) {
             if (videoGame.isMystery() == filterCsv.isMystery() && videoGame.isThriller() == filterCsv.isThriller()) {
                 lastGame.add(videoGame);
+                trackChoices.setNumgames5(lastGame.size());
             }
         }
 
         if (lastGame.isEmpty()){
             System.out.println("Unfortunately no exact match found but you may like this Game.");
             lastGame = filteredGame4;
+            trackChoices.setNumgames5(0);
         }
 
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="834.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsPage">
+   <children>
+      <BarChart fx:id="pickedChart" barGap="3.0" layoutX="14.0" layoutY="33.0" prefHeight="307.0" prefWidth="481.0" title="Total imes Picked by user">
+        <xAxis>
+          <CategoryAxis label="Times picked by user." side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="totalPieChart" layoutX="516.0" layoutY="22.0" prefHeight="439.0" prefWidth="661.0" title="Total of Genres" />
+      <BarChart fx:id="matchesBarChart" layoutX="14.0" layoutY="401.0" prefHeight="398.0" prefWidth="481.0" title="Matches to user selection on last run">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="765.0" layoutY="600.0" mnemonicParsing="false" onAction="#backButton" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

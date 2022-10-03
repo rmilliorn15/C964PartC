@@ -24,6 +24,7 @@ public class Comedy {
                 filteredGame3.add(videoGame);
             }
         }
+        trackChoices.setNumGames3(filteredGame3.size());
         System.out.println(filteredGame3.size());
 
         Parent root = FXMLLoader.load(getClass().getResource("/view/fantasySciFi.fxml"));

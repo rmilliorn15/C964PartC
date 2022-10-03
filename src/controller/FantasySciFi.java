@@ -15,7 +15,6 @@ import model.trackChoices;
 import java.io.IOException;
 
 import static controller.Comedy.filteredGame3;
-import static model.VideoGame.videoGames;
 
 public class FantasySciFi {
 
@@ -24,12 +23,17 @@ public class FantasySciFi {
         for (VideoGame videoGame : filteredGame3) {
             if (videoGame.isSciFi() == filterCsv.isSciFi() && videoGame.isFantasy() == filterCsv.isFantasy()) {
                 filteredGame4.add(videoGame);
+                trackChoices.setNumGames4(filteredGame4.size());
             }
         }
+
 
         if (filteredGame4.isEmpty()){
             System.out.println("No Matching game, continuing from last available list. ");
             filteredGame4 = filteredGame3;
+            trackChoices.setNumGames4(0);
+            trackChoices.setNumgames5(0);
+
         }
 
 

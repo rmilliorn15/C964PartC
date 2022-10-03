@@ -17,6 +17,15 @@ public class VideoGame {
     public boolean thriller;
     public boolean sciFi;
     public boolean fantasy;
+    private static int act = 0;
+    private static int adv = 0;
+    private static int cri = 0;
+    private static int fam = 0;
+    private static int com = 0;
+    private static int fan = 0;
+    private static int mys = 0;
+    private static int sci = 0;
+    private static int thr = 0;
     public static ObservableList<VideoGame> videoGames = FXCollections.observableArrayList();
 
     public VideoGame(int id, String title, String year, String description, boolean action, boolean adventure,
@@ -141,7 +150,8 @@ public class VideoGame {
     public void setYear(String year) {
         this.year = year;
     }
-    public static void addVideoGame(VideoGame videoGame){
+
+    static void addVideoGame(VideoGame videoGame){
         videoGames.add(videoGame);
     }
 
@@ -155,9 +165,76 @@ public class VideoGame {
         }
     }
 
-
-
     public static ObservableList<VideoGame> getVideoGames() {
         return videoGames;
+    }
+
+    public static void setGenres(){
+        for (VideoGame game : videoGames){
+            if (game.isAction()){
+                act++;
+            }
+            if (game.isAdventure()){
+                adv++;
+            }
+            if (game.isComedy()){
+                com++;
+            }
+            if (game.isCrime()){
+                cri++;
+            }
+            if (game.isFantasy()){
+                fan++;
+            }
+            if (game.isFamily()){
+                fam++;
+            }
+            if (game.isSciFi()){
+                sci++;
+            }
+            if (game.isMystery()){
+                mys++;
+            }
+            if (game.isThriller()){
+                thr++;
+            }
+
+        }
+    }
+
+    public static int getAct() {
+        return act;
+    }
+
+    public static int getAdv() {
+        return adv;
+    }
+
+    public static int getCom() {
+        return com;
+    }
+
+    public static int getCri() {
+        return cri;
+    }
+
+    public static int getFan() {
+        return fan;
+    }
+
+    public static int getFam() {
+        return fam;
+    }
+
+    public static int getSci() {
+        return sci;
+    }
+
+    public static int getMys() {
+        return mys;
+    }
+
+    public static int getThr() {
+        return thr;
     }
 }

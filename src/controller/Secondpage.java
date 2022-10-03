@@ -24,6 +24,7 @@ public class Secondpage {
                 filteredGame2.add(videoGame);
             }
         }
+        trackChoices.setNumGames2(filteredGame2.size());
         System.out.println(filteredGame2.size());
 
 
@@ -42,6 +43,7 @@ public class Secondpage {
         filterCsv.setFamily(false);
         filterGamesMethod(actionEvent);
         trackChoices.setPickCrime(trackChoices.getPickCrime() + 1);
+
 
     }
 

@@ -1,22 +1,19 @@
 package model;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import model.VideoGame;
 
 public class csvReader {
 
 
+    /**
+     * reads Csv file and creates new videogame objects before adding to Observable array.
+     * @throws IOException
+     */
     public static void readCsvFile() throws IOException {
-        ObservableList<VideoGame> videoGames = FXCollections.observableArrayList();
         String file = "imdb-videogamesupdated.csv";
-
         String line = null;
-
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
@@ -36,13 +33,10 @@ public class csvReader {
             boolean sciFi = Boolean.parseBoolean(temp[11]);
             boolean thriller = Boolean.parseBoolean(temp[12]);
 
-
             VideoGame addGame = new VideoGame(id,title,year,description,action,
                     adventure,comedy,crime,family, fantasy,mystery,sciFi,thriller);
 
             VideoGame.addVideoGame(addGame);
-
-
         }
 
     }
